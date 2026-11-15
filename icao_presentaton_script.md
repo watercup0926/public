@@ -1,29 +1,41 @@
-Hello everyone. My name is 鄭新畬. Today, I would like to present the International Civil Aviation Organization, or ICAO.
+Hello everyone. My name is 鄭新畬. Today, I will present the International Civil Aviation Organization, or ICAO.
 
-First, what is ICAO? ICAO is an intergovernmental organization under the United Nations framework. It is a task-specific international organization focusing on aviation safety, airspace management, and environmental protection.
+## Slide 1 — Cover
 
-Why is ICAO important? Aviation is global by design. An international flight crosses different airspaces, legal systems, and safety authorities in a single journey. ICAO brings together experts, aviation authorities, and country representatives to create common standards. These standards reduce coordination costs and improve aviation safety.
+My presentation explains how ICAO can influence aviation safety even though it does not directly certify or operate every aircraft.
 
-ICAO was established after World War II. The Chicago Convention was signed in 1944, and ICAO became a specialized agency of the United Nations in 1947. Its main components include the Assembly, the Council, the Air Navigation Commission, and the Secretariat.
+## Slide 2 — What Happened?
 
-What standards does ICAO publish? They are called Standards and Recommended Practices, or SARPs. SARPs cover the rules of the air, air traffic services, aeronautical communications, navigation, airport operations, aircraft noise, and emissions. ICAO creates the international framework, while national aviation authorities implement and enforce these standards.
+The Boeing 777X certification and entry into service have been delayed again. The FAA, not ICAO, conducts the aircraft certification.
 
-To see how this works in practice, consider a flight from RCTP, Taiwan Taoyuan International Airport, to RJTT, Tokyo Haneda Airport. ICAO does not control the individual flight or assign its exact route. Instead, it provides the common framework used by the airline and air traffic authorities.
+So, what is the connection with ICAO? The 777X must demonstrate compliance with national airworthiness requirements that reflect international standards, including ICAO Annex 8.
 
-Before departure, the airline submits a standardized flight plan containing the route, aircraft information, weather, fuel, and alternate-airport information. During the flight, air traffic services coordinate clearances, communication, navigation, surveillance, and separation across different airspace areas. When the aircraft arrives at RJTT, approach and runway procedures follow national rules aligned with ICAO SARPs. The exact route may change because of weather, traffic, military airspace, or air traffic control instructions.
+ICAO did not reject the 777X, and it did not directly stop the programme. ICAO does not issue the type certificate or inspect the aircraft itself. Instead, it provides a common international framework that national authorities use when they create and apply certification requirements.
 
-This example shows ICAO's role as an international organization. ICAO does not operate every flight, but it creates shared rules that allow different aviation authorities to cooperate safely. Relevant standards include Annex 2 on Rules of the Air, Annex 10 on Aeronautical Telecommunications, Annex 11 on Air Traffic Services, and Annex 15 on Aeronautical Information Services.
+This case is important because it shows how an international organization can influence safety without having direct enforcement power.
 
-The Boeing 777X provides another example. First, who certifies it? ICAO does not issue the aircraft type certificate. The FAA conducts the certification in the United States, while other authorities, such as EASA, may validate the aircraft for their jurisdictions.
+## Slide 3 — Definition and Typology
 
-Next, aircraft noise. The actual regulations include ICAO Annex 16, Volume I, and FAA 14 CFR Part 36. These establish aircraft noise-certification standards.
+ICAO is a specialized agency of the United Nations. Its Assembly meets every three years, its headquarters are in Montreal, Canada, and it has 193 Member States.
 
-For aircraft emissions, the actual regulations include ICAO Annex 16, Volume II, and FAA 14 CFR Part 34. These address aircraft-engine emissions.
+In terms of typology, ICAO is a task-specific international organization because it focuses on civil aviation. It is also a programme organization because it develops long-term standards and programmes. Finally, it is decentralized in implementation because Member States apply the standards through their own national authorities.
 
-Finally, ETOPS means Extended Operations. The standard says just in case there's an engine broke down, the aircraft needs to find an airport within a certain time. And it can also understands as "Engine turns or passenger swim".
+## Slide 4 — One Lesson
 
-As you can feel in the examples, ICAO isn't powerful. All the standards must be followed by local avation authorties to be effective. But at the same time. It's very effective.
+My lesson is that effect does not necessarily require power.
 
-In conclusion, ICAO is essential to global aviation governance. It does not replace national aviation authorities, but it creates the common standards that make international flights such as RCTP to RJTT possible. Although ICAO faces national, political, and implementation limitations, it continues to promote safer and more coordinated international civil aviation.
+ICAO can affect the safety of an aircraft without directly certifying it. It creates international standards, and national authorities turn those standards into certification and enforcement decisions.
+
+Therefore, influence can come from coordination, expertise, and shared rules, not only from direct control.
+
+## Slide 5 — One Suggestion
+
+My suggestion is that ICAO should begin developing an international aviation-to-space safety framework before commercial space travel becomes routine.
+
+This framework could cover launch-site coordination, airspace closures, re-entry warnings, emergency communication, and passenger safety.
+
+Airspace and spaceflight increasingly overlap. Early international standards could reduce confusion between aviation authorities and space operators.
+
+In conclusion, the 777X case shows that ICAO’s influence is indirect but meaningful. It sets the framework, while national authorities carry out the actual certification.
 
 Thank you for listening.
