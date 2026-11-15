@@ -6,9 +6,11 @@ My presentation explains how ICAO can influence aviation safety even though it d
 
 ## Slide 2 — What Happened?
 
-The Boeing 777X certification and entry into service have been delayed again. The FAA, not ICAO, conducts the aircraft certification.
+The Boeing 777X certification and entry into service have been delayed again. 
 
 So, what is the connection with ICAO? The 777X must demonstrate compliance with national airworthiness requirements that reflect international standards, including ICAO Annex 8.
+
+To be more specific, the 777x struggle to get ETOPS certification, also as known as extend-range twin engine operation performance standard, and that is because there's a crack in the engine seal which doesn't meet ICAO Annex 8, Part 6(engine)
 
 ICAO did not reject the 777X, and it did not directly stop the programme. ICAO does not issue the type certificate or inspect the aircraft itself. Instead, it provides a common international framework that national authorities use when they create and apply certification requirements.
 
