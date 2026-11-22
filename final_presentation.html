@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICAO | International Organizations</title>
+  <style>
+    :root {
+      --ink: #eaf3ff;
+      --muted: #9fb3ca;
+      --blue: #70d7ff;
+      --gold: #ffc857;
+      --navy: #071321;
+      --panel: rgba(15, 32, 54, .82);
+      --line: rgba(174, 211, 241, .2);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--navy);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    .deck {
+      background:
+        radial-gradient(circle at 85% 8%, rgba(112, 215, 255, .16), transparent 28rem),
+        radial-gradient(circle at 8% 85%, rgba(255, 200, 87, .1), transparent 25rem),
+        var(--navy);
+    }
+    .slide {
+      position: relative;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: min(1280px, 100%);
+      min-height: 100vh;
+      margin: auto;
+      padding: clamp(1.7rem, 5vw, 4rem) clamp(1.4rem, 7vw, 7rem);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero { align-content: center; }
+    .eyebrow {
+      color: var(--blue);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 950px;
+      margin: .8rem 0 1.2rem;
+      font-size: clamp(3rem, 8vw, 7.5rem);
+      line-height: .9;
+      letter-spacing: -.07em;
+    }
+    h2 {
+      max-width: 950px;
+      margin: .7rem 0 2rem;
+      font-size: clamp(2.2rem, 5vw, 5rem);
+      line-height: .95;
+      letter-spacing: -.06em;
+    }
+    h3 { margin-bottom: .45rem; color: var(--blue); font-size: 1.15rem; }
+    .accent { color: var(--gold); }
+    .lead, .subtle {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      line-height: 1.55;
+    }
+    .content { align-content: center; padding: 1rem 0 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card {
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--panel);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, .14);
+    }
+    .card p, li { color: var(--muted); line-height: 1.5; }
+    ul { margin: .5rem 0 0; padding-left: 1.15rem; }
+    li + li { margin-top: .55rem; }
+    .timeline { display: grid; gap: .9rem; max-width: 800px; }
+    .timeline div { display: grid; grid-template-columns: 90px 1fr; gap: 1rem; align-items: start; }
+    .year { color: var(--gold); font-weight: 800; font-size: 1.2rem; }
+    .quote {
+      max-width: 950px;
+      padding: 1.5rem 1.7rem;
+      border-left: 4px solid var(--gold);
+      background: rgba(255, 200, 87, .08);
+      color: var(--ink);
+      font-size: clamp(1.25rem, 3vw, 2rem);
+      line-height: 1.35;
+    }
+    .photo {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      object-fit: cover;
+    }
+    .photo-layout { display: grid; grid-template-columns: 1.05fr .95fr; gap: 1.2rem; align-items: center; }
+    .headquarters-photo { height: 245px; }
+    .certification-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 1.2rem; align-items: stretch; }
+    .boeing-photo { height: 100%; min-height: 300px; }
+    .route-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 1.3rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--panel);
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .route-strip span { color: var(--blue); }
+    .tag {
+      display: inline-block;
+      padding: .35rem .65rem;
+      margin: .15rem .2rem .15rem 0;
+      border: 1px solid rgba(112, 215, 255, .45);
+      border-radius: 99px;
+      color: var(--blue);
+      font-size: .85rem;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .85rem;
+    }
+    .controls {
+      position: fixed;
+      z-index: 5;
+      right: 1rem;
+      bottom: 1rem;
+      display: flex;
+      gap: .4rem;
+    }
+    button {
+      cursor: pointer;
+      padding: .55rem .75rem;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      color: var(--ink);
+      background: rgba(7, 19, 33, .85);
+    }
+    button:hover, button:focus-visible { border-color: var(--blue); color: var(--blue); }
+    .sources a { color: var(--blue); }
+    @media (max-width: 700px) {
+      .grid, .grid.three, .photo-layout, .certification-layout { grid-template-columns: 1fr; }
+      .timeline div { grid-template-columns: 65px 1fr; }
+      .slide { min-height: 100svh; }
+    }
+    @media print {
+      @page {
+        size: 13.333in 7.5in;
+        margin: 0;
+      }
+      html, body, .deck {
+        width: 13.333in;
+        height: auto;
+        margin: 0;
+      }
+      .slide {
+        width: 13.333in;
+        height: 7.5in;
+        min-height: 0;
+        overflow: hidden;
+        break-after: page;
+        page-break-after: always;
+      }
+      .slide:last-child {
+        break-after: auto;
+        page-break-after: auto;
+      }
+      .controls { display: none; }
+      .deck { background: #071321; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="slide hero" id="slide-1">
+      <div>
+        <div class="eyebrow">International Organizations | Final Presentation</div>
+        <h1>The <span class="accent">ICAO</span> and Global Aviation Governance</h1>
+        <p class="subtle">International Civil Aviation Organization · Presented by:鄭新畬</p>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-2">
+      <header><div class="eyebrow">01 · The happening</div><h2>What happened?</h2></header>
+      <div class="content certification-layout">
+        <img class="photo boeing-photo" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Boeing_777X_flyover_at_2025_Seafair_-_01.jpg" alt="Boeing 777-9 aircraft flying at the 2025 Seafair Air Show">
+        <div class="grid">
+          <article class="card"><h3>777X Certification delayed again</h3></article>
+          <article class="card"><h3>What is the ICAO connection?</h3></article>
+          <article class="card"><h3>ICAO did not stop the aircraft</h3></article>
+          <article class="card"><h3>Why it matters</h3></article>
+        </div>
+      </div>
+      <p class="source">Sources: <a href="https://www.icao.int/safety/airworthiness" target="_blank" rel="noopener">ICAO Annex 8 and airworthiness</a> · <a href="https://www.faa.gov/aircraft/air_cert" target="_blank" rel="noopener">FAA aircraft certification</a></p>
+    </section>
+
+    <section class="slide" id="slide-3">
+      <header><div class="eyebrow">02 · Course related content</div><h2>Definition and typology</h2></header>
+      <div class="content grid">
+        <article class="card">
+          <h3>Definition</h3>
+          <ul>
+            <li>ICAO is a specialized agency of the United Nations.</li>
+            <li>Its Assembly meets every three years.</li>
+            <li>Its headquarters are in Montreal, Canada.</li>
+            <li>It has 193 Member States.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Typology</h3>
+          <p><span class="tag">Task-specific IO</span><span class="tag">Programme IO</span><span class="tag">Decentralized IO</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-4">
+      <header><div class="eyebrow">03 · One lesson</div><h2>Effect does not necessarily require power.</h2></header>
+      <div class="content">
+        <p class="quote">ICAO can influence aircraft safety without directly certifying or operating an aircraft.</p>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-5">
+      <header><div class="eyebrow">04 · One suggestion</div><h2>Extend the standards to space travel.</h2></header>
+      <div class="content">
+        <p class="quote">ICAO should begin developing an international aviation-to-space safety framework before commercial space travel becomes routine.</p>
+      </div>
+
+    </section>
+  </main>
+  <nav class="controls" aria-label="Presentation controls">
+    <button type="button" id="prev" aria-label="Previous slide">←</button>
+    <button type="button" id="next" aria-label="Next slide">→</button>
+  </nav>
+  <script>
+    const slides = [...document.querySelectorAll(".slide")];
+    let current = 0;
+    function showSlide(index) {
+      current = Math.max(0, Math.min(index, slides.length - 1));
+      slides[current].scrollIntoView({ behavior: "smooth" });
+    }
+    document.getElementById("prev").addEventListener("click", () => showSlide(current - 1));
+    document.getElementById("next").addEventListener("click", () => showSlide(current + 1));
+    document.addEventListener("keydown", event => {
+      if (["ArrowRight", "PageDown", " "].includes(event.key)) {
+        event.preventDefault();
+        showSlide(current + 1);
+      }
+      if (["ArrowLeft", "PageUp"].includes(event.key)) {
+        event.preventDefault();
+        showSlide(current - 1);
+      }
+    });
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) current = slides.indexOf(entry.target);
+      });
+    }, { threshold: .6 });
+    slides.forEach(slide => observer.observe(slide));
+  </script>
+</body>
+</html>
